@@ -71,6 +71,16 @@ void imprime(aluno a){
 }
 
 int main(int argc, char *argv[]) {
+
+	// Checa a arquitetura do sistema (32 ou 64 bits)
+    if(sizeof(int*) == 4) {
+        printf("Este programa esta rodando em uma arquitetura de 32 bits.\n");
+    } else if(sizeof(int*) == 8) {
+        printf("Este programa esta rodando em uma arquitetura de 64 bits.\n");
+    } else {
+        printf("Nao foi possivel determinar a arquitetura.\n");
+    }
+	
 	aluno* alunos[MAX];	//vetor com 5 ponteiros
 	int i,num;
 	
