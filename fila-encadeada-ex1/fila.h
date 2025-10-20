@@ -1,4 +1,4 @@
-typedef struct{
+typedef struct tipoNo {
 	int dado;
 	struct tipoNo* prox;
 	struct tipoNo* ant;
